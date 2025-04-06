@@ -1,0 +1,132 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Fondo oscuro y colores futuristas */
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+header {
+    background: linear-gradient(135deg, #1f1f1f, #007bff);
+    color: white;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 123, 255, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    border: 3px solid #00d9ff;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
+}
+
+/* Navegación */
+nav {
+    margin: 30px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00d9ff;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00d9ff;
+}
+
+/* Secciones */
+section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #00d9ff;
+    text-transform: uppercase;
+    font-size: 2em;
+    border-bottom: 2px solid #00d9ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #1f1f1f;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
